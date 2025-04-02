@@ -1,0 +1,3 @@
+[*.cs]
+# Use the same line for opening braces in properties, methods, etc.
+csharp_new_line_before_open_brace = none

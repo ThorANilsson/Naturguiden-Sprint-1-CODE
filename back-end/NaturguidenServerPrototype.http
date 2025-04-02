@@ -1,0 +1,11 @@
+@NaturguidenServerPrototype_HostAddress = http://localhost:5222
+
+GET {{NaturguidenServerPrototype_HostAddress}}/naturespots/
+Accept: application/json
+
+###
+
+GET {{NaturguidenServerPrototype_HostAddress}}/naturespots/1
+Accept: application/json
+
+###
