@@ -67,7 +67,6 @@ Nu är servern igång.
 Nu är web-servern igång.
 #
 Om allt fungerat kan du nu öppna en webläsare och navigera till http://localhost:3000/ varifrån du kan använda Naturguiden.
-## OBS!
 
 > [!IMPORTANT]
 > Hemsidan kommer kännas väldigt långsam när du navigerar mellan sidor. Detta är eftersom du kör hemsidan i development mode. Om du önskar köra hemsidan i production mode behöver du [bygga projektet](https://nextjs.org/docs/pages/building-your-application/deploying).
