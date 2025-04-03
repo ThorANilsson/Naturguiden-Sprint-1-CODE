@@ -49,7 +49,10 @@ Får du inga error meddelanden så här långt finns det goda förhoppningar fö
 Öppna filen `appsettings.json`. Här ska du leta efter en nyckel som heter `DefaultConnection` som kommer innehålla en tom sträng. Du ska ersätta den tomma strängen med en "connection string" till databasen som du skapade tidigare. 
 
 Du kan använda mallen för en connection string här nedan. Du måste ersätta vissa delar av den:
+
 `Host=localhost;Database=<DATABAS_NAMN_HÄR>;Username=<DATABAS_ANVÄNDARNAMN_HÄR>;Password=<DATABAS_LÖSENORD_HÄR>`
+
+*Hint: om du inte vet ditt postgres username, testa då "postgres" som username.*
 
 Spara filen `appsettings.json`.
 
