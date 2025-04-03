@@ -4,17 +4,17 @@ Denna README beskriver hur du startar vår prototyp av Naturguiden.
 ## Krav
 Följande program/verktyg måste installeras på datorn som ska köra prototypen.
 
-- Git Bash version 2.47.1 eller högre
+- [Git Bash](https://git-scm.com/downloads) version 2.47.1 eller högre
 
-- Node.js version 20.9.0 eller högre
+- [Node.js](https://nodejs.org/) version 20.9.0 eller högre
 
-- NPM version 10.1.0 eller högre
+- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) version 10.1.0 eller högre
 
-- Microsoft .NET Framework 9.0 (kan funka med lägre versioner, egen risk)
+- [Microsoft .NET Framework 9.0](https://dotnet.microsoft.com/en-us/download) (kan funka med lägre versioner, egen risk)
 
-- PostgreSQL 16 (kan funka med lägre versioner, egen risk)
+- [PostgreSQL 16](https://www.postgresql.org/download/) (kan funka med lägre versioner, egen risk)
 
-- pgAdmin 4 (ej krav men starkt rekommenderat för att följa denna readme)
+- [pgAdmin 4](https://www.pgadmin.org/download/) (ej krav men starkt rekommenderat för att följa denna readme)
 ## Beskrivning av strukturen
 I detta repository finns 2st mappar:
 
@@ -25,7 +25,7 @@ samt en fil `naturguiden_prototype_db.backup` som du kommer använda för att å
 
 ## Skapa databasen
 > [!NOTE]  
-> Vi rekommenderar att du skapar databasen lokalt på din egna dator när du följer denna readme. Det vill säga, att du inte använder MAU postgres server.
+> Vi rekommenderar att du skapar databasen lokalt på din egna dator. Det vill säga, att du inte använder MAU postgres server.
 1. Skapa en ny databas i pgAdmin:
 2. Högerklicka på Databaser → Create → Database
 3. Namnge den t.ex. naturguiden_kamratgranskning_db (eller valfritt namn).
@@ -49,7 +49,6 @@ Får du inga error meddelanden så här långt finns det goda förhoppningar fö
 Öppna filen `appsettings.json`. Här ska du leta efter en nyckel som heter `DefaultConnection` som kommer innehålla en tom sträng. Du ska ersätta den tomma strängen med en "connection string" till databasen som du skapade tidigare. 
 
 Du kan använda mallen för en connection string här nedan. Du måste ersätta vissa delar av den:
-
 `Host=localhost;Database=<DATABAS_NAMN_HÄR>;Username=<DATABAS_ANVÄNDARNAMN_HÄR>;Password=<DATABAS_LÖSENORD_HÄR>`
 
 Spara filen `appsettings.json`.
